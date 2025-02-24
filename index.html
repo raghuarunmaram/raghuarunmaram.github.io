@@ -1,128 +1,172 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghu Arun Maram - Data Engineer Portfolio</title>
+    <title>Raghu Arun Maram - Data Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Raghu Arun Maram</h1>
-            <p class="tagline">Data Engineer | AWS | 5+ Years Experience</p>
-            <nav>
-                <a href="#about">About</a> | 
-                <a href="#skills">Skills</a> | 
-                <a href="#projects">Projects</a> | 
-                <a href="https://linkedin.com/in/raghuarunmaram">LinkedIn</a> | 
-                <a href="mailto:raghuarun0912@gmail.com">Email</a>
-            </nav>
+        <nav class="nav-bar">
+            <div class="logo">Raghu Arun Maram</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="resume.html" target="_blank">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://linkedin.com/in/raghuarunmaram" target="_blank">LinkedIn</a></li>
+                <li><a href="/cdn-cgi/l/email-protection#c0b2a1a7a8b5a1b2b5aef0f9f1f280a7ada1a9aceea3afad">Email</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Data Engineer</h1>
+            <a href="#about" class="cta-btn" id="explore-btn">Explore My Work</a>
         </div>
     </header>
 
-    <section id="about" class="fade-in">
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I’m a seasoned Data Engineer with over 5 years of experience architecting robust, scalable data ecosystems. At Amazon Web Services (AWS), I spent 3 years crafting high-throughput pipelines using Kinesis, Glue, and Redshift, reducing latency by up to 40% for real-time analytics. Previously, at TCS, I optimized ETL workflows across 2 years, migrating terabyte-scale datasets to cloud platforms like Snowflake. I thrive on transforming complex raw data into actionable insights with cutting-edge cloud and big data technologies.</p>
-    </section>
+        <p id="greeting">
+            <!-- The greeting will change every 0.5 seconds -->
+        </p>
+        <p>
+            I’m a passionate Data Engineer who thrives on building powerful, real-time data systems and streamlining workflows to make data smarter and more efficient. I focus on creating solutions that handle massive amounts of information with ease, ensuring everything works seamlessly together. From automating processes to boosting data accuracy, I’m all about helping organizations make fast, informed decisions. My goal? To transform data challenges into opportunities that drive innovation and impact. Let’s work together to make your data truly amazing.
+        </p>
+        <br>
+    </section>        
 
-    <section id="skills" class="fade-in">
-        <h2>Key Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>AWS Ecosystem</h3>
-                <p>S3 (Parquet), Redshift (SQL), Glue (Crawlers, Jobs), EMR (PySpark), SageMaker, CloudWatch, Lambda (Automation), Kinesis (Streams), DataSync, Athena, CloudFormation, Boto3</p>
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item aws">
+                <h3>AWS</h3>
+                <p>S3, Redshift, Glue, EMR, SageMaker, Lambda, Kinesis</p>
             </div>
-            <div class="skill-card">
-                <h3>Programming & Scripting</h3>
-                <p>Python (Pandas, Flask, Boto3), SQL (JOINs, Tuning), PySpark, YAML</p>
+            <div class="skill-item azure">
+                <h3>Azure</h3>
+                <p>ADF, Synapse Analytics, Azure Databricks</p>
             </div>
-            <div class="skill-card">
-                <h3>Big Data Frameworks</h3>
-                <p>Spark (ETL), Databricks (Delta Lake), HDFS</p>
+            <div class="skill-item programming">
+                <h3>Programming</h3>
+                <p>Python (Pandas, Boto3), SQL, PySpark</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-item bigdata">
+                <h3>Big Data</h3>
+                <p>Spark, Databricks, HDFS</p>
+            </div>
+            <div class="skill-item etl">
                 <h3>ETL & Pipelines</h3>
-                <p>Glue (Event-Driven), Airflow, Fivetran, Matillion, Tableau Prep, Real-Time/Batch</p>
+                <p>Glue, Airflow, Fivetran</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-item warehousing">
                 <h3>Data Warehousing</h3>
-                <p>Snowflake (Data Exchange), Redshift, SQL Server, Schema Modeling</p>
+                <p>Snowflake, Redshift, SQL Server</p>
             </div>
-            <div class="skill-card">
-                <h3>Data Processing</h3>
-                <p>DynamicFrames, Parquet, Validation, Optimization (30-50% Gains)</p>
-            </div>
-            <div class="skill-card">
-                <h3>Analytics & BI</h3>
-                <p>Tableau (Dashboards), Power BI, Athena (Insights)</p>
-            </div>
-            <div class="skill-card">
-                <h3>Automation</h3>
-                <p>Lambda (Scaling), Glue Triggers, Azure Data Factory, Airflow</p>
-            </div>
-            <div class="skill-card">
-                <h3>Security</h3>
-                <p>Encryption, IAM, Compliance</p>
-            </div>
-            <div class="skill-card">
-                <h3>Database Expertise</h3>
-                <p>Stored Procedures, Indexing, Query Tuning</p>
+            <div class="skill-item analytics">
+                <h3>Analytics</h3>
+                <p>Tableau, Power BI, Athena</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="fade-in">
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Real-Time Sales Analytics Pipeline (Amazon Web Services)</h3>
-            <p>Engineered a high-performance ETL pipeline to process 10TB/day of Amazon Ads transactional data, integrating real-time ingestion via AWS Kinesis Data Streams (handling 5M events/second) with AWS Glue for automated schema inference using Crawlers. Wrote Python scripts leveraging Boto3 and Pandas for multi-stage transformations, partitioning data into Parquet files stored in S3 for scalability. Loaded processed data into Redshift with optimized SQL queries (nested JOINs, window functions), slashing query latency by 40% and enabling 50+ business analysts to access near-real-time dashboards.</p>
-            <p><strong>Tech:</strong> AWS Glue (Crawlers, Jobs), Amazon Redshift, Python (Pandas, Boto3), Amazon S3 (Parquet), SQL</p>
-            <button class="details-btn">Details</button>
-        </div>
-        <div class="project-card">
-            <h3>Data Migration for Legacy Systems (TCS)</h3>
-            <p>Orchestrated the zero-downtime migration of 5TB of heterogeneous data from on-premises SQL Server databases to Snowflake, utilizing Apache Airflow for workflow automation and Python scripts for extracting data from REST APIs and flat files. Staged data in S3 buckets, transformed it with Snowflake’s native SQL functions (e.g., LATERAL FLATTEN for JSON), and optimized target schemas with indexing, achieving a 30% boost in query performance. Integrated the warehouse with Tableau, delivering interactive KPI dashboards to stakeholders.</p>
-            <p><strong>Tech:</strong> SQL (SQL Server, Snowflake), Python, Apache Airflow, AWS S3, Snowflake, Tableau</p>
-            <button class="details-btn">Details</button>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Amazon Ads Performance Analytics</h3>
+                <p>Built a scalable data pipeline for real-time Amazon Ads performance analysis and optimization.</p>
+                <p class="tech">Python, EMR, AWS S3, Glue, Redshift, Lambda, Step Functions, CloudWatch</p>
+                <button class="details-btn" onclick="toggleDetails(this)">Learn More</button>
+                <div class="project-details" style="display: none;">
+                    <p>As a Data Engineer at Amazon, I designed and deployed a production-grade data pipeline to process and analyze Amazon advertising campaign performance data...</p>
+                    <p><strong>Responsibilities & Features:</strong></p>
+                    <ul>
+                        <li><strong>Data Ingestion:</strong> Built a scalable ingestion layer...</li>
+                        <li><strong>ETL Pipeline:</strong> Engineered an ETL workflow using Apache Spark...</li>
+                        <li><strong>Storage:</strong> Loaded processed data into Amazon Redshift...</li>
+                    </ul>
+                    <p><strong>Tech Stack:</strong></p>
+                    <ul>
+                        <li><strong>Languages:</strong> Python (Pandas, PySpark for data processing)</li>
+                        <li><strong>Big Data:</strong> Apache Spark (via Amazon EMR)</li>
+                        <li><strong>Cloud:</strong> AWS S3, AWS Redshift, AWS Lambda</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Data Migration for Legacy Systems</h3>
+                <p>Migrated 5TB of data to Snowflake with zero downtime, boosting query performance by 30% using Airflow and Tableau dashboards.</p>
+                <p class="tech">Snowflake, Airflow, S3, Tableau</p>
+                <button class="details-btn" onclick="toggleDetails(this)">Learn More</button>
+                <div class="project-details" style="display: none;">
+                    <p>Transformed JSON data with Snowflake SQL and staged in S3 for seamless integration.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Raghu Arun Maram. Hosted on GitHub Pages.</p>
+        <p>© 2025 Raghu Arun Maram. All Rights Reserved.</p>
     </footer>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
-        // Fade-in on scroll
-        const sections = document.querySelectorAll('.fade-in');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.2 });
-    
-        sections.forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            observer.observe(section);
+        // Array of greetings in different languages
+        const greetings = {
+            en: "Hi there!",
+            es: "¡Hola!",
+            hi: "नमस्ते!",
+            te: "నమస్కారం!",
+            fr: "Bonjour!",
+            de: "Hallo!",
+            it: "Ciao!",
+            pt: "Oi!",
+            nl: "Hallo daar!",
+            ru: "Привет!",
+            ja: "こんにちは!",
+            zh: "你好!"
+        };
+
+        let languageIndex = 0;
+        const greetingElement = document.getElementById('greeting');
+
+        // Function to generate a greeting with colored letters
+        function getColoredGreeting(text) {
+            const colors = ["#FF5733", "#33FF57", "#5733FF", "#F4D03F", "#EC7063", "#3498DB", "#8E44AD", "#2ECC71", "#E67E22"];
+            return text.split("").map((char, index) => `<span style="color:${colors[index % colors.length]}; font-weight:bold; font-size: 2rem;">${char}</span>`).join("");
+        }
+
+        // Change greeting every 0.6 seconds
+        function changeGreeting() {
+            const languages = Object.values(greetings);
+            greetingElement.innerHTML = getColoredGreeting(languages[languageIndex]);
+            languageIndex = (languageIndex + 1) % languages.length;
+        }
+
+        setInterval(changeGreeting, 600);
+
+        // Smooth scroll for "Explore My Work" button
+        document.getElementById('explore-btn').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor jump
+            const aboutHeading = document.querySelector('#about h2');
+            aboutHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     
-        // Toggle project details (placeholder)
-        document.querySelectorAll('.details-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const project = btn.parentElement;
-                const details = project.querySelector('.project-details');
-                if (!details) {
-                    const newDetails = document.createElement('p');
-                    newDetails.className = 'project-details';
-                    newDetails.textContent = 'More details coming soon! Imagine an interactive demo here.';
-                    newDetails.style.color = '#666';
-                    project.appendChild(newDetails);
-                } else {
-                    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        // Toggle project details
+        function toggleDetails(btn) {
+            const details = btn.nextElementSibling;
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    
+        // Fade-in sections on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    section.classList.add('visible');
                 }
             });
         });
