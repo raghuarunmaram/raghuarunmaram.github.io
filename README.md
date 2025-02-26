@@ -18,3 +18,10 @@ I’m a Data Engineer who enjoys creating data solutions that are fast, reliable
 - **CSS3**: Gives it style with layouts, animations, and a design that fits any screen.
 - **JavaScript**: Makes it interactive, like the progress bar and clickable details.
 - **Extras**: I pulled in the SF Pro Display font from Google Fonts and added some SVG icons for skills and social links.
+
+## Live Site
+[Visit here](https://raghuarunmaram.github.io)
+
+## Setup
+1. Clone the repo: `git clone https://github.com/raghuarunmaram/raghuarunmaram.github.io.git`
+2. Open `index.html` in a browser.
