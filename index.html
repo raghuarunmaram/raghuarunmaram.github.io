@@ -3,172 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghu Arun Maram - Data Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Raghu Arun Maram</title>
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="readingProgress"></div>
+    </div>
+
     <header>
-        <nav class="nav-bar">
-            <div class="logo">Raghu Arun Maram</div>
+        <nav class="nav-bar" id="navbar">
+            <div class="logo">Raghu Arun</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="resume.html" target="_blank">Resume</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://linkedin.com/in/raghuarunmaram" target="_blank">LinkedIn</a></li>
-                <li><a href="/cdn-cgi/l/email-protection#c0b2a1a7a8b5a1b2b5aef0f9f1f280a7ada1a9aceea3afad">Email</a></li>
+                <li><a href="#about-anchor">About</a></li>
+                <li><a href="#skills-anchor">Skills</a></li>
+                <li><a href="#projects-anchor">Projects</a></li>
             </ul>
         </nav>
+
         <div class="hero">
-            <h1>Data Engineer</h1>
-            <a href="#about" class="cta-btn" id="explore-btn">Explore My Work</a>
+            <div class="hero-content">
+                <div class="skill-item hero-card">
+                    <div class="hero-center">
+                        <img src="raghu.jpg" alt="Raghu Arun Maram" class="profile-image">
+                        <h1 class="hero-name">Raghu Arun Maram</h1>
+                        <p class="hero-description">
+                            Passionate about building powerful, real-time data systems. Specialize in transforming complex data challenges into innovative, efficient solutions.
+                        </p>
+                        <div class="hero-socials">
+                            <a href="https://x.com" target="_blank" class="social-icon">
+                                <img src="x.svg" alt="X" class="social-icon-svg">
+                            </a>
+                            <a href="https://www.linkedin.com/in/raghuarunmaram" target="_blank" class="social-icon">
+                                <img src="linkedin.svg" alt="LinkedIn" class="social-icon-svg">
+                            </a>
+                            <a href="/cdn-cgi/l/email-protection#c0b2a1a7a8b5a1b2b5aef0f9f1f280a7ada1a9aceea3afad" class="social-icon">
+                                <img src="gmail.svg" alt="Gmail" class="social-icon-svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p id="greeting">
-            <!-- The greeting will change every 0.5 seconds -->
-        </p>
-        <p>
-            I’m a passionate Data Engineer who thrives on building powerful, real-time data systems and streamlining workflows to make data smarter and more efficient. I focus on creating solutions that handle massive amounts of information with ease, ensuring everything works seamlessly together. From automating processes to boosting data accuracy, I’m all about helping organizations make fast, informed decisions. My goal? To transform data challenges into opportunities that drive innovation and impact. Let’s work together to make your data truly amazing.
-        </p>
-        <br>
-    </section>        
+    <main>
+        <section id="about" class="section">
+            <span class="scroll-anchor" id="about-anchor"></span>
+            <h2>About Me</h2>
+            <p>
+                I’m a passionate Data Engineer who thrives on building powerful, real-time data systems and streamlining workflows to make data smarter and more efficient. I focus on creating solutions that handle massive amounts of information with ease, ensuring everything works seamlessly together. From automating processes to boosting data accuracy, I’m all about helping organizations make fast, informed decisions. My goal? To transform data challenges into opportunities that drive innovation and impact. Let’s work together to make your data truly amazing.
+            </p>
+        </section>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-item aws">
-                <h3>AWS</h3>
-                <p>S3, Redshift, Glue, EMR, SageMaker, Lambda, Kinesis</p>
-            </div>
-            <div class="skill-item azure">
-                <h3>Azure</h3>
-                <p>ADF, Synapse Analytics, Azure Databricks</p>
-            </div>
-            <div class="skill-item programming">
-                <h3>Programming</h3>
-                <p>Python (Pandas, Boto3), SQL, PySpark</p>
-            </div>
-            <div class="skill-item bigdata">
-                <h3>Big Data</h3>
-                <p>Spark, Databricks, HDFS</p>
-            </div>
-            <div class="skill-item etl">
-                <h3>ETL & Pipelines</h3>
-                <p>Glue, Airflow, Fivetran</p>
-            </div>
-            <div class="skill-item warehousing">
-                <h3>Data Warehousing</h3>
-                <p>Snowflake, Redshift, SQL Server</p>
-            </div>
-            <div class="skill-item analytics">
-                <h3>Analytics</h3>
-                <p>Tableau, Power BI, Athena</p>
-            </div>
-        </div>
-    </section>
+        <div class="section-separator"></div>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Amazon Ads Performance Analytics</h3>
-                <p>Built a scalable data pipeline for real-time Amazon Ads performance analysis and optimization.</p>
-                <p class="tech">Python, EMR, AWS S3, Glue, Redshift, Lambda, Step Functions, CloudWatch</p>
-                <button class="details-btn" onclick="toggleDetails(this)">Learn More</button>
-                <div class="project-details" style="display: none;">
-                    <p>As a Data Engineer at Amazon, I designed and deployed a production-grade data pipeline to process and analyze Amazon advertising campaign performance data...</p>
-                    <p><strong>Responsibilities & Features:</strong></p>
-                    <ul>
-                        <li><strong>Data Ingestion:</strong> Built a scalable ingestion layer...</li>
-                        <li><strong>ETL Pipeline:</strong> Engineered an ETL workflow using Apache Spark...</li>
-                        <li><strong>Storage:</strong> Loaded processed data into Amazon Redshift...</li>
-                    </ul>
-                    <p><strong>Tech Stack:</strong></p>
-                    <ul>
-                        <li><strong>Languages:</strong> Python (Pandas, PySpark for data processing)</li>
-                        <li><strong>Big Data:</strong> Apache Spark (via Amazon EMR)</li>
-                        <li><strong>Cloud:</strong> AWS S3, AWS Redshift, AWS Lambda</li>
-                    </ul>
+        <section id="skills" class="section">
+            <span class="scroll-anchor" id="skills-anchor"></span>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <!-- AWS Skills -->
+                <div class="skill-item aws"><img src="s3.svg" alt="S3" class="skill-logo"><h3 class="skill-name">S3</h3></div>
+                <div class="skill-item aws"><img src="redshift.svg" alt="Redshift" class="skill-logo"><h3 class="skill-name">Redshift</h3></div>
+                <div class="skill-item aws"><img src="glue.svg" alt="Glue" class="skill-logo"><h3 class="skill-name">Glue</h3></div>
+                <div class="skill-item aws"><img src="emr.svg" alt="EMR" class="skill-logo"><h3 class="skill-name">EMR</h3></div>
+                <div class="skill-item aws"><img src="SageMaker.svg" alt="SageMaker" class="skill-logo"><h3 class="skill-name">SageMaker</h3></div>
+                <div class="skill-item aws"><img src="Lambda.svg" alt="Lambda" class="skill-logo"><h3 class="skill-name">Lambda</h3></div>
+                <div class="skill-item aws"><img src="Kinesis.svg" alt="Kinesis" class="skill-logo"><h3 class="skill-name">Kinesis</h3></div>
+                <div class="skill-item aws"><img src="athena.svg" alt="Athena" class="skill-logo"><h3 class="skill-name">Athena</h3></div>
+                <div class="skill-item aws"><img src="Step Functions.svg" alt="Step Functions" class="skill-logo"><h3 class="skill-name">Step Functions</h3></div>
+                <div class="skill-item aws"><img src="CloudWatch.svg" alt="CloudWatch" class="skill-logo"><h3 class="skill-name">CloudWatch</h3></div>
+                <div class="skill-item aws"><img src="DataSync.svg" alt="DataSync" class="skill-logo"><h3 class="skill-name">DataSync</h3></div>
+                <!-- Azure Skills -->
+                <div class="skill-item azure"><img src="adf.svg" alt="ADF" class="skill-logo"><h3 class="skill-name">ADF</h3></div>
+                <div class="skill-item azure"><img src="synapse.svg" alt="Synapse Analytics" class="skill-logo"><h3 class="skill-name">Synapse Analytics</h3></div>
+                <!-- Programming Skills -->
+                <div class="skill-item programming"><img src="python.svg" alt="Python" class="skill-logo"><h3 class="skill-name">Python</h3></div>
+                <div class="skill-item programming"><img src="sql.svg" alt="SQL" class="skill-logo"><h3 class="skill-name">SQL</h3></div>
+                <div class="skill-item programming"><img src="spark.svg" alt="Spark" class="skill-logo"><h3 class="skill-name">PySpark</h3></div>
+                <!-- Big Data Skills -->
+                <div class="skill-item bigdata"><img src="databricks.svg" alt="Databricks" class="skill-logo"><h3 class="skill-name">Databricks</h3></div>
+                <div class="skill-item bigdata"><img src="hdfs.svg" alt="HDFS" class="skill-logo"><h3 class="skill-name">HDFS</h3></div>
+                <div class="skill-item bigdata"><img src="fivetran.svg" alt="Fivetran" class="skill-logo"><h3 class="skill-name">Fivetran</h3></div>
+                <div class="skill-item bigdata"><img src="matillion.svg" alt="Matillion" class="skill-logo"><h3 class="skill-name">Matillion</h3></div>
+                <!-- ETL Skills -->
+                <div class="skill-item etl"><img src="airflow.svg" alt="Airflow" class="skill-logo"><h3 class="skill-name">Airflow</h3></div>
+                <!-- Warehousing Skills -->
+                <div class="skill-item warehousing"><img src="snowflake.svg" alt="Snowflake" class="skill-logo"><h3 class="skill-name">Snowflake</h3></div>
+                <!-- Analytics Skills -->
+                <div class="skill-item analytics"><img src="tableau.svg" alt="Tableau" class="skill-logo"><h3 class="skill-name">Tableau</h3></div>
+                <div class="skill-item analytics"><img src="powerbi.svg" alt="Power BI" class="skill-logo"><h3 class="skill-name">Power BI</h3></div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <section id="projects" class="section">
+            <span class="scroll-anchor" id="projects-anchor"></span>
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Amazon Ads Performance Analytics</h3>
+                    <p>Built a scalable data pipeline for real-time Amazon Ads performance analysis and optimization.</p>
+                    <p class="tech">Python, EMR, AWS S3, Glue, Redshift, Lambda, Step Functions, CloudWatch, </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Learn More</button>
+                    <div class="project-details" style="display: none;">
+                        <p>As a Data Engineer at Amazon, I designed and deployed a production-grade data pipeline to process and analyze Amazon advertising campaign performance data. This project supported the Ads team by transforming raw impression, click, and conversion data into actionable insights, enabling optimization of ad spend and campaign strategies. The pipeline handled terabyte-scale datasets, integrated seamlessly with AWS infrastructure, and delivered near real-time KPIs to stakeholders via a centralized data warehouse.</p>
+                        <p><strong>Responsibilities & Features:</strong></p>
+                        <ul>
+                            <li><strong>Data Ingestion:</strong> Built a scalable ingestion layer to pull raw ad event data (impressions, clicks, conversions, spend) from Amazon’s internal S3 buckets, processing millions of records daily.</li>
+                            <li><strong>ETL Pipeline:</strong> Engineered an ETL workflow using Apache Spark and Python to clean, enrich, and aggregate ad data, computing KPIs like click-through rate (CTR), cost-per-click (CPC), and return on ad spend (ROAS).</li>
+                            <li><strong>Storage:</strong> Loaded processed data into Amazon Redshift, optimizing for high-performance analytical queries across campaign, region, and time dimensions.</li>
+                            <li><strong>Analytics:</strong> Delivered structured datasets supporting queries for campaign performance trends, budget efficiency, and audience targeting effectiveness.</li>
+                            <li><strong>Automation:</strong> Orchestrated the pipeline with AWS Step Functions and Amazon CloudWatch Events, ensuring daily execution and monitoring for reliability.</li>
+                            <li><strong>Collaboration:</strong> Partnered with Data Scientists and Product Managers to refine data models and ensure outputs met reporting needs.</li>
+                        </ul>
+                        <p><strong>Tech Stack:</strong></p>
+                        <ul>
+                            <li><strong>Languages:</strong> Python (Pandas, PySpark for data processing)</li>
+                            <li><strong>Big Data:</strong> Apache Spark (via Amazon EMR for distributed processing)</li>
+                            <li><strong>Cloud:</strong> AWS S3 (raw data storage), AWS Redshift (data warehousing), AWS Lambda (lightweight transformations), AWS Step Functions (workflow orchestration)</li>
+                            <li><strong>Monitoring:</strong> Amazon CloudWatch (logs and alerts)</li>
+                            <li><strong>Database:</strong> Amazon Redshift (with local PostgreSQL for prototyping)</li>
+                            <li><strong>Version Control:</strong> Git (internal Amazon repos)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Data Migration for Legacy Systems</h3>
+                    <p>Migrated 5TB of data to Snowflake with zero downtime, boosting query performance by 30% using Airflow and Tableau dashboards.</p>
+                    <p class="tech">Snowflake, Airflow, S3, Tableau</p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Learn More</button>
+                    <div class="project-details" style="display: none;">
+                        <p>Transformed JSON data with Snowflake SQL and staged in S3 for seamless integration.</p>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <h3>Data Migration for Legacy Systems</h3>
-                <p>Migrated 5TB of data to Snowflake with zero downtime, boosting query performance by 30% using Airflow and Tableau dashboards.</p>
-                <p class="tech">Snowflake, Airflow, S3, Tableau</p>
-                <button class="details-btn" onclick="toggleDetails(this)">Learn More</button>
-                <div class="project-details" style="display: none;">
-                    <p>Transformed JSON data with Snowflake SQL and staged in S3 for seamless integration.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>© 2025 Raghu Arun Maram. All Rights Reserved.</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
-        // Array of greetings in different languages
-        const greetings = {
-            en: "Hi there!",
-            es: "¡Hola!",
-            hi: "नमस्ते!",
-            te: "నమస్కారం!",
-            fr: "Bonjour!",
-            de: "Hallo!",
-            it: "Ciao!",
-            pt: "Oi!",
-            nl: "Hallo daar!",
-            ru: "Привет!",
-            ja: "こんにちは!",
-            zh: "你好!"
-        };
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded'); // Debugging
 
-        let languageIndex = 0;
-        const greetingElement = document.getElementById('greeting');
-
-        // Function to generate a greeting with colored letters
-        function getColoredGreeting(text) {
-            const colors = ["#FF5733", "#33FF57", "#5733FF", "#F4D03F", "#EC7063", "#3498DB", "#8E44AD", "#2ECC71", "#E67E22"];
-            return text.split("").map((char, index) => `<span style="color:${colors[index % colors.length]}; font-weight:bold; font-size: 2rem;">${char}</span>`).join("");
-        }
-
-        // Change greeting every 0.6 seconds
-        function changeGreeting() {
-            const languages = Object.values(greetings);
-            greetingElement.innerHTML = getColoredGreeting(languages[languageIndex]);
-            languageIndex = (languageIndex + 1) % languages.length;
-        }
-
-        setInterval(changeGreeting, 600);
-
-        // Smooth scroll for "Explore My Work" button
-        document.getElementById('explore-btn').addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default anchor jump
-            const aboutHeading = document.querySelector('#about h2');
-            aboutHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-    
-        // Toggle project details
-        function toggleDetails(btn) {
-            const details = btn.nextElementSibling;
-            details.style.display = details.style.display === 'none' ? 'block' : 'none';
-        }
-    
-        // Fade-in sections on scroll
-        window.addEventListener('scroll', () => {
+            const progressBar = document.getElementById('readingProgress');
+            const navLinks = document.querySelectorAll('.nav-links a');
             const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    section.classList.add('visible');
-                }
+            const skillItems = document.querySelectorAll('.skill-item');
+            const detailButtons = document.querySelectorAll('.details-btn');
+
+            // Progress Bar Update
+            const updateProgressBar = () => {
+                const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / scrollHeight) * 100;
+                progressBar.style.width = `${scrollPercent}%`;
+            };
+
+            // Smooth Scroll for Navigation
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = anchor.getAttribute('href');
+                    if (targetId.startsWith('#')) {
+                        const targetElement = document.querySelector(targetId);
+                        const navbarHeight = document.getElementById('navbar').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight - 20;
+                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    }
+                });
             });
+
+            // Toggle Project Details
+            detailButtons.forEach(button => {
+                console.log('Button found:', button); // Debugging
+                button.addEventListener('click', () => {
+                    const details = button.nextElementSibling;
+                    console.log('Clicked button, details element:', details); // Debugging
+                    if (details && details.classList.contains('project-details')) {
+                        const isHidden = details.style.display === 'none' || !details.style.display;
+                        details.style.display = isHidden ? 'block' : 'none';
+                        button.textContent = isHidden ? 'Hide Details' : 'Learn More';
+                        console.log('Toggled display to:', details.style.display); // Debugging
+                    } else {
+                        console.error('No project-details found for this button');
+                    }
+                });
+            });
+
+            // Scroll Handler with Debouncing
+            let rafId = null;
+            const handleScroll = () => {
+                if (rafId) return;
+                rafId = requestAnimationFrame(() => {
+                    updateProgressBar();
+
+                    sections.forEach(section => {
+                        const rect = section.getBoundingClientRect();
+                        if (rect.top < window.innerHeight - 100 && !section.classList.contains('visible')) {
+                            section.classList.add('visible');
+                        }
+                    });
+
+                    skillItems.forEach(item => {
+                        const rect = item.getBoundingClientRect();
+                        const isInViewport = rect.top <= window.innerHeight - 100 && rect.bottom >= 100;
+                        item.classList.toggle('visible', isInViewport);
+                        item.classList.toggle('hidden', !isInViewport);
+                    });
+
+                    rafId = null;
+                });
+            };
+
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Initial call
         });
     </script>
 </body>
