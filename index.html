@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghu Arun Maram</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="progress-container">
@@ -32,13 +31,10 @@
                             Passionate about building powerful, real-time data systems. Specialize in transforming complex data challenges into innovative, efficient solutions.
                         </p>
                         <div class="hero-socials">
-                            <a href="https://x.com" target="_blank" class="social-icon">
-                                <img src="assets/svg/x.svg" alt="X" class="social-icon-svg">
-                            </a>
                             <a href="https://www.linkedin.com/in/raghuarunmaram" target="_blank" class="social-icon">
                                 <img src="assets/svg/linkedin.svg" alt="LinkedIn" class="social-icon-svg">
                             </a>
-                            <a href="/cdn-cgi/l/email-protection#c0b2a1a7a8b5a1b2b5aef0f9f1f280a7ada1a9aceea3afad" class="social-icon">
+                            <a href="mailto:raghuarun34@gmail.com" class="social-icon">
                                 <img src="assets/svg/gmail.svg" alt="Gmail" class="social-icon-svg">
                             </a>
                         </div>
@@ -106,7 +102,7 @@
                 <div class="project-card">
                     <h3>Amazon Ads Performance Analytics</h3>
                     <p>Built a scalable data pipeline for real-time Amazon Ads performance analysis and optimization.</p>
-                    <p class="tech">Python, EMR, AWS S3, Glue, Redshift, Lambda, Step Functions, CloudWatch, </p>
+                    <p class="tech">Python, EMR, AWS S3, Glue, Redshift, Lambda, Step Functions, CloudWatch</p>
                     <button class="details-btn" onclick="toggleDetails(this)">Learn More</button>
                     <div class="project-details" style="display: none;">
                         <p>As a Data Engineer at Amazon, I designed and deployed a production-grade data pipeline to process and analyze Amazon advertising campaign performance data. This project supported the Ads team by transforming raw impression, click, and conversion data into actionable insights, enabling optimization of ad spend and campaign strategies. The pipeline handled terabyte-scale datasets, integrated seamlessly with AWS infrastructure, and delivered near real-time KPIs to stakeholders via a centralized data warehouse.</p>
@@ -149,8 +145,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('DOM fully loaded'); // Debugging
-
             const progressBar = document.getElementById('readingProgress');
             const navLinks = document.querySelectorAll('.nav-links a');
             const sections = document.querySelectorAll('.section');
@@ -181,17 +175,12 @@
 
             // Toggle Project Details
             detailButtons.forEach(button => {
-                console.log('Button found:', button); // Debugging
                 button.addEventListener('click', () => {
                     const details = button.nextElementSibling;
-                    console.log('Clicked button, details element:', details); // Debugging
                     if (details && details.classList.contains('project-details')) {
                         const isHidden = details.style.display === 'none' || !details.style.display;
                         details.style.display = isHidden ? 'block' : 'none';
                         button.textContent = isHidden ? 'Hide Details' : 'Learn More';
-                        console.log('Toggled display to:', details.style.display); // Debugging
-                    } else {
-                        console.error('No project-details found for this button');
                     }
                 });
             });
